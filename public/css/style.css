@@ -94,7 +94,7 @@
 }
 
 .logo-box {
-  background-color: rgba(215, 168, 110, 0.6);
+  background-color: rgba(43, 43, 43, 0.6);
   padding: 50px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -109,7 +109,7 @@
 }
 
 #profile {
-  background-color: #ffebc1;
+  background-color: #DFD8C8;
 }
 
 #profile .text-leading {
@@ -118,7 +118,7 @@
 }
 
 #definisi-batik {
-  background: linear-gradient(to right, #d7a86e 15%, #a64b2a 10%, #a64b2a 100%);
+  background: linear-gradient(to right, #393E46 15%, #CABFAB 10%, #DFD8C8 100%);
 }
 
 #definisi-batik .wrapper {
@@ -140,7 +140,7 @@
 
 #keunggulan {
   min-height: auto;
-  background: linear-gradient(to left, #d7a86e 15%, #ffebc1 10%, #ffebc1 100%);
+  background: linear-gradient(to left, #393E46 15%, #52575D 10%, #CABFAB 100%);
 }
 
 #keunggulan .wrapper {
@@ -161,7 +161,7 @@
 }
 
 #keistimewaan {
-  background: linear-gradient(to right, #d7a86e 15%, #a64b2a 10%, #a64b2a 100%);
+  background: linear-gradient(to right, #393E46 15%, #52575D 10%, #CABFAB 100%);
   min-height: 100vh;
 }
 
@@ -231,7 +231,7 @@
     box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.1);
   }
   .nav-res ul li :hover {
-    color: #a64b2a;
+    color: #52575D;
   }
   .nav-res ul li {
     cursor: pointer;
@@ -393,7 +393,7 @@
 .border-c-p-1 {
   border: 1px solid;
   border-radius: 8px;
-  border-color: #8e3200;
+  border-color: #393E46;
 }
 
 .send-button {
@@ -442,7 +442,7 @@
   bottom: 100px;
   left: 30px;
   font-size: 24px;
-  color: #8e3200;
+  color: #393E46;
   opacity: 0;
   transition: opacity 0.3s ease;
   cursor: pointer;

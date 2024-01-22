@@ -4,7 +4,7 @@ html {
 
 p,
 span {
-  font-family: 'Inria Serif';
+  font-family: 'Hind Siliguri';
 }
 
 h1,
@@ -13,37 +13,37 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Kaushan Script';
+  font-family: 'Hind Siliguri';
 }
 
 .primary-4 {
-  color: #ffebc1;
+  color: #CABFAB;
 }
 
 .primary-3 {
-  color: #d7a86e;
+  color: #DFD8C8;
 }
 
 .primary-2 {
-  color: #a64b2a;
+  color: #52575D;
 }
 
 .primary-1 {
-  color: #8e3200;
+  color: #393E46;
 }
 
 .bg-primary-4 {
-  background-color: #ffebc1;
+  background-color: #CABFAB;
 }
 
 .bg-primary-3 {
-  background-color: #d7a86e;
+  background-color: #DFD8C8;
 }
 
 .bg-primary-2 {
-  background-color: #a64b2a;
+  background-color: #52575D;
 }
 
 .bg-primary-1 {
-  background-color: #8e3200;
+  background-color: #393E46;
 }
