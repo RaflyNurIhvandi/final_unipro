@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="public/img/logo_batiku.png">
-    <title>Batiku</title>
+    <link rel="icon" href="public/img/logo.png">
+    <title>La_Fleur Bouquet</title>
     <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+
     <link href="https://fonts.cdnfonts.com/css/hind-siliguri" rel="stylesheet">
+
     <link href="https://fonts.cdnfonts.com/css/inria-serif" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
 
@@ -27,7 +32,7 @@
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary-3 shadow-sm">
         <div class="container">
             <a class="navbar-brand primary-1" href="#">
-                <img src="public/img/logo_batiku.png" alt="" width="35">
+                <img src="public/img/logo.png" style="border-radius: 50%;" alt="" width="35">
             </a>
             <div class="togl" onclick="tgl_active()">
                 <div class="garis" id="garis-1"></div>
@@ -36,25 +41,30 @@
             </div>
             <div class="nav-res" id="nav-rs">
                 <ul>
-                    <li class="primary-1"><a class="nav-link" href="#"><span class="primary-1 nav-sty">Beranda</span></a>
+                    <li class="primary-1"><a class="nav-link" href="#"><span
+                                class="primary-1 nav-sty">Beranda</span></a>
                     </li>
                     <li class="primary-1" onmouseout="tgbt_none()" onmousemove="tgbt_block()"><a class="nav-link"
-                            href="#"><span class="primary-1 nav-sty">Tentang Batiku</span></a></li>
-                    <li class="primary-1"><a class="nav-link" href="#produk-batiku"><span class="primary-1 nav-sty">Produk
-                                Batiku</span></a></li>
-                    <li class="primary-1"><a class="nav-link" href="#pesan"><span class="primary-1 nav-sty">Pesan</span></a>
+                            href="#"><span class="primary-1 nav-sty">Tentang La_Fleur</span></a></li>
+                    <li class="primary-1"><a class="nav-link" href="#produk-batiku"><span
+                                class="primary-1 nav-sty">Produk
+                                La_Fleur</span></a></li>
+                    <li class="primary-1"><a class="nav-link" href="#pesan"><span
+                                class="primary-1 nav-sty">Pesan</span></a>
                     </li>
                 </ul>
             </div>
             <div class="tg-bt" id="tg-bt" onmouseout="tgbt_none()" onmousemove="tgbt_block()">
                 <ul>
-                    <li class="primary-1"><a class="nav-link" href="#profile"><span class="primary-1 nav-sty">Profil</span></a>
+                    <li class="primary-1"><a class="nav-link" href="#profile"><span
+                                class="primary-1 nav-sty">Profil</span></a>
                     </li>
                     <li class="primary-1"><a class="nav-link" href="#definisi-batik"><span
                                 class="primary-1 nav-sty">Keunggulan</span></a></li>
                     <li class="primary-1"><a class="nav-link" href="#keunggulan"><span class="primary-1 nav-sty">Cara
                                 Pemesanan</span></a></li>
-                    <li class="primary-1"><a class="nav-link" href="#galeri"><span class="primary-1 nav-sty">Galeri</span></a></li>
+                    <li class="primary-1"><a class="nav-link" href="#galeri"><span
+                                class="primary-1 nav-sty">Galeri</span></a></li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="">
@@ -66,11 +76,10 @@
                     </li>
                     <li class="nav-item ms-3 nav-li drop-dn" onmousemove="dis_block1()" onmouseout="dis_none1()">
                         <a class="nav-link dropdown-toggle" style="cursor: pointer;">
-                            <span class="primary-1 nav-sty">Tentang Batiku</span>
+                            <span class="primary-1 nav-sty">Tentang La_Fleur</span>
                         </a>
                         <div class="dr-cn" id="nav-dr-cn1">
-                            <a href="#profile" onclick="dis_none1()"><span
-                                    class="primary-1 nav-sty">Profil</span></a>
+                            <a href="#profile" onclick="dis_none1()"><span class="primary-1 nav-sty">Profil</span></a>
                             <a href="#definisi-batik" onclick="dis_none1()"><span
                                     class="primary-1 nav-sty">Keunggulan</span></a>
                             <a href="#keunggulan" onclick="dis_none1()"><span class="primary-1 nav-sty">Cara
@@ -79,7 +88,8 @@
                         </div>
                     </li>
                     <li class="nav-item ms-3 nav-li">
-                        <a class="nav-link" href="#produk-batiku"><span class="primary-1 nav-sty">Produk Batiku</span></a>
+                        <a class="nav-link" href="#produk-batiku"><span class="primary-1 nav-sty">Produk
+                                La_Fleur</span></a>
                     </li>
                     <li class="nav-item ms-3 nav-li">
                         <a class="nav-link" href="#pesan"><span class="primary-1 nav-sty">Pesan</span></a>
@@ -234,8 +244,10 @@
                     <h1 class="aos-kiri">Cara Pemesanan</h1>
                     <p class="mt-4 aos-kiri lh-lg" style="text-align: justify;">
                         1. Buka situs web resmi Batiku untuk menelusuri koleksi dan produk batik yang ditawarkan.<br>
-                        2. Jelajahi produk Batiku untuk melihat berbagai macam batik yang tersedia. Tinjau desain, motif, dan pilihan warna.<br>
-                        3. Hubungi Kontak Person dengan klik tombol "Chat Via WhatsApp" dibawah atau bisa langsung menuju ke market pleace yang tersedia.<br>
+                        2. Jelajahi produk Batiku untuk melihat berbagai macam batik yang tersedia. Tinjau desain,
+                        motif, dan pilihan warna.<br>
+                        3. Hubungi Kontak Person dengan klik tombol "Chat Via WhatsApp" dibawah atau bisa langsung
+                        menuju ke market pleace yang tersedia.<br>
                         4. Tim administrator akan memberikan panduan untuk melanjutkan pemesanan.<br>
                         5. Lakukan pembayaran dengan metode yang diberikan admin.<br>
                         6. Maka pesanan anda akan segera ditangani oleh tim Batiku.
@@ -469,7 +481,8 @@
                 </a>
             </div>
             <div class=" my-2 content-icon lazada-icon">
-                <a href="" class="d-flex align-items-center">
+                <a href="https://www.tiktok.com/@la_fleur.bouquet?_t=8jEwvSlyNWM&_r=1"
+                    class="d-flex align-items-center">
                     <img style=" width: 39px;" src="public/img/icon/lazada-icon.png" alt="" srcset="">
                     <p class="my-2 ms-2">Lazada</p>
                 </a>
@@ -484,42 +497,48 @@
         <div class="container py-4 pb-3">
             <div class="row px-4">
                 <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
-                    <img src="public/img/logo_batiku.png" width="170px" height="170px" alt="">
+                    <img src="public/img/logo.png" style="border-radius: 50%;" width="240px" height="240px" alt="">
                 </div>
                 <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
                     <div class="pen-fot">
                         <h5 class="primary-1 mb-3">Links</h5>
                         <p class="lh-1"><a href="#" class="text-decoration-none"><span class="primary-1">Menu</span></a>
                         </p>
+                        <p class="lh-1"><a href="#" class="text-decoration-none"><span
+                                    class="primary-1">Beranda</span></a></p>
                         <p class="lh-1"><a href="#profile" class="text-decoration-none"><span
-                                    class="primary-1">Profile</span></a></p>
+                                    class="primary-1">Profil</span></a></p>
                         <p class="lh-1"><a href="#definisi-batik" class="text-decoration-none"><span
-                                    class="primary-1">Tentang Batik</span></a></p>
-                        <p class="lh-1"><a href="#batik-agraris" class="text-decoration-none"><span
-                                    class="primary-1">Blog Batik</span></a></p>
-                        <p class="lh-1"><a href="#pesan" class="text-decoration-none"><span
-                                    class="primary-1">Pesan</span></a></p>
+                                    class="primary-1">Keunggulan</span></a></p>
+                        <p class="lh-1"><a href="#keunggulan" class="text-decoration-none"><span class="primary-1">Cara
+                                    Pemesanan</span></a></p>
+                        <p class="lh-1"><a href="#galeri" class="text-decoration-none"><span
+                                    class="primary-1">Galeri</span></a></p>
+                        <p class="lh-1"><a href="#produk-batiku" class="text-decoration-none"><span
+                                    class="primary-1">Produk La_Fleur</span></a></p>
                     </div>
                 </div>
                 <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
                     <div class="pen-fot">
                         <h5 class="primary-1 mb-3">Kontak Person</h5>
-                        <a href="" class="text-decoration-none">
+                        <a href="https://wa.me/62859176888785" target="_blank" class="text-decoration-none">
                             <div class="d-flex">
                                 <img src="public/img/icon/wa.png" width="25" height="25" class="me-2" alt="">
-                                <p class="primary-1">0822 2861 8269</p>
+                                <p class="primary-1">0877 6580 7475</p>
                             </div>
                         </a>
-                        <a href="" class="text-decoration-none">
-                            <div class="d-flex">
-                                <img src="public/img/icon/email.png" width="25" height="25" class="me-2" alt="">
-                                <p class="primary-1">batiku@gmail.com</p>
-                            </div>
-                        </a>
-                        <a href="" class="text-decoration-none">
+                        <a target="_blank"
+                            href="https://www.instagram.com/la_fleur.bouquet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            class="text-decoration-none">
                             <div class="d-flex">
                                 <img src="public/img/icon/ig.png" width="25" height="25" class="me-2" alt="">
-                                <p class="primary-1">@batiku.official</p>
+                                <p class="primary-1">@La_Fleur.Bouquet</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="" class="text-decoration-none">
+                            <div class="d-flex">
+                                <img src="public/img/icon/tt.png" width="25" height="25" class="me-2" alt="">
+                                <p class="primary-1">@La_Fleur.Bouquet</p>
                             </div>
                         </a>
                     </div>
@@ -527,8 +546,9 @@
                 <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
                     <div class="pen-fot">
                         <h5 class="primary-1 mb-2">Tentang Kami</h5>
-                        <p class="primary-1">Jasa pembuatan batik Indonesia BATIKU melayani pembuatan dan pemesanan
-                            ragam batik seluruh Indonesia. <a href="#profile" class="text-decoration-none"><span
+                        <p class="primary-1">Kami bergerak dalam jasa pembuatan Bucket. Pembuatan Bucket kami mulai dari
+                            yang termurah berkisaran Rp 17.000,- sampai dengan harga yang termahal Rp 55.000,- dengan
+                            kualitas yang terbaik.<a href="#profile" class="text-decoration-none"><span
                                     class="fst-italic fw-bold primary-1"
                                     style="font-size:small;">Selengkapnya</span></a></p>
                         <a href=""
@@ -539,7 +559,7 @@
             </div>
             <div class="row">
                 <span class="gr-c primary-1 pt-3 text-center">
-                    Copyright © Batiku 2023
+                    Copyright © La_Fleur Bouquet 2024
                 </span>
             </div>
         </div>
