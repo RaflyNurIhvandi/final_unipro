@@ -41,7 +41,7 @@
 /* end aos */
 
 .gr-c {
-  border-top: 3px solid #8e3200;
+  border-top: 3px solid #393E46;
 }
 .dr-cn a {
   color: #8e3200;
@@ -58,6 +58,7 @@
   display: none;
   position: absolute;
   background-color: #d7a86e;
+  background-color:#DFD8C8;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
@@ -65,18 +66,18 @@
 }
 
 .nav-li:hover {
-  border-bottom: solid 1px #8e3200;
+  border-bottom: solid 1px #52575D;
   display: block;
 }
 
 .nav-sty:hover {
-  color: #a64b2a;
+  color: #52575D;
   /* border-bottom: solid 1px #8E3200; */
 }
 
 .nav-sty {
   font-weight: bold;
-  font-family: 'Optima';
+  font-family: 'Hind Siliguri';
 }
 
 /* fitra */
@@ -231,7 +232,7 @@
     transform: translateX(-15px);
   }
   .tg-bt {
-    background-color: #d7a86e;
+    background-color: #DFD8C8;
     width: 175px;
     display: none;
     list-style: none;
@@ -252,7 +253,7 @@
     transform: translateX(-15px);
   }
   .nav-res {
-    background-color: #d7a86e;
+    background-color: #DFD8C8;
     width: 175px;
     display: none;
     position: fixed;
