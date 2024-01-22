@@ -57,6 +57,7 @@
 .dr-cn {
   display: none;
   position: absolute;
+  background-color: #d7a86e;
   background-color:#DFD8C8;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -94,7 +95,7 @@
 }
 
 .logo-box {
-  background-color: rgba(43, 43, 43, 0.6);
+  background-color: rgba(82, 87, 93, 0.6);
   padding: 50px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -106,10 +107,15 @@
 .logo-box img {
   opacity: 100%;
   width: 300px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 #profile {
-  background-color: #DFD8C8;
+  background-color: #dfd8c8;
 }
 
 #profile .text-leading {
@@ -117,51 +123,57 @@
   text-align: justify;
 }
 
-#definisi-batik {
-  background: linear-gradient(to right, #393E46 15%, #CABFAB 10%, #DFD8C8 100%);
+#keunggulan-lafleur {
+  background: linear-gradient(to right, #393e46 15%, #cabfab 10%, #dfd8c8 100%);
 }
 
-#definisi-batik .wrapper {
+#keunggulan-lafleur .wrapper {
   display: flex;
 }
 
-#definisi-batik img {
+#keunggulan-lafleur img {
   box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.7);
   width: 400px;
+  border: 20px solid #dfd8c8;
   margin-top: 20px;
 }
 
-#definisi-batik .text-definisi {
+#keunggulan-lafleur .text-definisi {
   margin-left: 100px;
   margin-top: 40px;
 }
 
-#keunggulan {
+#cara-pesan {
   min-height: auto;
-  background: linear-gradient(to left, #393E46 15%, #52575D 10%, #CABFAB 100%);
+  background: linear-gradient(to left, #393e46 15%, #cabfab 10%, #cabfab 100%);
 }
 
-#keunggulan .wrapper {
+#cara-pesan .wrapper {
   display: flex;
 }
 
-#keunggulan img {
+#cara-pesan img {
   box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.7);
+  border: 20px solid #dfd8c8;
   width: 400px;
   margin-top: 20px;
 }
 
-#keunggulan .text-keunggulan {
+#cara-pesan .image-responsive {
+  display: none;
+}
+
+#cara-pesann .text-keunggulan {
   margin-right: 150px;
   margin-top: 40px;
 }
 
 #keistimewaan {
-  background: linear-gradient(to right, #393E46 15%, #52575D 10%, #CABFAB 100%);
+  background: linear-gradient(to right, #393e46 15%, #52575d 10%, #cabfab 100%);
   min-height: 100vh;
 }
 
@@ -208,7 +220,7 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .txt-galeri {
     text-align: justify;
   }
@@ -228,10 +240,10 @@
     transform: translate(22px, 155px);
     font-weight: bold;
     border-radius: 20px;
-    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
   }
   .nav-res ul li :hover {
-    color: #52575D;
+    color: #52575d;
   }
   .nav-res ul li {
     cursor: pointer;
@@ -248,7 +260,7 @@
     transform: translate(170px, 95px);
     font-weight: bold;
     border-radius: 20px;
-    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
   }
   .transform_bawah {
     rotate: 43deg;
@@ -289,26 +301,33 @@
     margin-left: 65px;
   }
 
-  #keunggulan .text-keunggulan {
+  #cara-pesan .text-keunggulan {
     margin-right: 65px;
     margin-top: 40px;
   }
 
-  #keunggulan .wrapper {
+  #cara-pesan .wrapper {
     display: block;
     text-align: center;
   }
 
-  #keunggulan img {
+  #cara-pesan img {
     width: 240px;
     margin-right: 65px;
+    display: none;
   }
 
-  #definisi-batik .text-definisi p {
+  #cara-pesan .image-responsive {
+    width: 240px;
+    margin-right: 65px;
+    display: flex;
+  }
+
+  #keunggulan-lafleur .text-definisi p {
     text-align: justify;
   }
 
-  #definisi-batik .text-definisi {
+  #keunggulan-lafleur .text-definisi {
     margin-left: 45px;
     margin-top: 40px;
   }
@@ -318,12 +337,12 @@
     margin-left: 0px;
   }
 
-  #definisi-batik .wrapper {
+  #keunggulan-lafleur .wrapper {
     display: block;
     text-align: center;
   }
 
-  #definisi-batik img {
+  #keunggulan-lafleur img {
     width: 240px;
   }
 
@@ -393,7 +412,7 @@
 .border-c-p-1 {
   border: 1px solid;
   border-radius: 8px;
-  border-color: #393E46;
+  border-color: #393e46;
 }
 
 .send-button {
@@ -442,7 +461,7 @@
   bottom: 100px;
   left: 30px;
   font-size: 24px;
-  color: #393E46;
+  color: #393e46;
   opacity: 0;
   transition: opacity 0.3s ease;
   cursor: pointer;
