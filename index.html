@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/img/logo_batiku.png">
+    <title>Batiku</title>
+    <!-- font -->
+    <link href="https://fonts.cdnfonts.com/css/kaushan-script" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/inria-serif" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="public/css/all.css">
+    <link rel="stylesheet" href="public/css/style.css">
+
+    <!-- js -->
+    <script src="public/js/script.js"></script>
+
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand primary-1" href="#">
+                <img src="public/img/logo_batiku.png" alt="" width="35">
+            </a>
+            <div class="togl" onclick="tgl_active()">
+                <div class="garis" id="garis-1"></div>
+                <div class="garis" id="garis-2"></div>
+                <div class="garis" id="garis-3"></div>
+            </div>
+            <div class="nav-res" id="nav-rs">
+                <ul>
+                    <li class="primary-1"><a class="nav-link" href="#"><span class="primary-1 nav-sty">Beranda</span></a>
+                    </li>
+                    <li class="primary-1" onmouseout="tgbt_none()" onmousemove="tgbt_block()"><a class="nav-link"
+                            href="#"><span class="primary-1 nav-sty">Tentang Batiku</span></a></li>
+                    <li class="primary-1"><a class="nav-link" href="#produk-batiku"><span class="primary-1 nav-sty">Produk
+                                Batiku</span></a></li>
+                    <li class="primary-1"><a class="nav-link" href="#pesan"><span class="primary-1 nav-sty">Pesan</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tg-bt" id="tg-bt" onmouseout="tgbt_none()" onmousemove="tgbt_block()">
+                <ul>
+                    <li class="primary-1"><a class="nav-link" href="#profile"><span class="primary-1 nav-sty">Profil</span></a>
+                    </li>
+                    <li class="primary-1"><a class="nav-link" href="#definisi-batik"><span
+                                class="primary-1 nav-sty">Keunggulan</span></a></li>
+                    <li class="primary-1"><a class="nav-link" href="#keunggulan"><span class="primary-1 nav-sty">Cara
+                                Pemesanan</span></a></li>
+                    <li class="primary-1"><a class="nav-link" href="#galeri"><span class="primary-1 nav-sty">Galeri</span></a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-3 nav-li">
+                        <a class="nav-link" href="#"><span class="primary-1 nav-sty">Beranda</span></a>
+                    </li>
+                    <li class="nav-item ms-3 nav-li drop-dn" onmousemove="dis_block1()" onmouseout="dis_none1()">
+                        <a class="nav-link dropdown-toggle" style="cursor: pointer;">
+                            <span class="primary-1 nav-sty">Tentang Batiku</span>
+                        </a>
+                        <div class="dr-cn" id="nav-dr-cn1">
+                            <a href="#profile" onclick="dis_none1()"><span
+                                    class="primary-1 nav-sty">Profil</span></a>
+                            <a href="#definisi-batik" onclick="dis_none1()"><span
+                                    class="primary-1 nav-sty">Keunggulan</span></a>
+                            <a href="#keunggulan" onclick="dis_none1()"><span class="primary-1 nav-sty">Cara
+                                    Pemesanan</span></a>
+                            <a href="#galeri" onclick="dis_none1()"><span class="primary-1 nav-sty">Galeri</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-3 nav-li">
+                        <a class="nav-link" href="#produk-batiku"><span class="primary-1 nav-sty">Produk Batiku</span></a>
+                    </li>
+                    <li class="nav-item ms-3 nav-li">
+                        <a class="nav-link" href="#pesan"><span class="primary-1 nav-sty">Pesan</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- home -->
+    <section id="home">
+        <div class="banner">
+            <div class="logo-box">
+                <img src="public/img/logo_batiku.png" class="aos-bawah" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- profile -->
+    <section id="profile">
+        <div class="container py-3">
+            <h1 class="primary-1 text-center aos-bawah">Tentang Kami</h1>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="aos-kiri">
+                        <h4 class="primary-1">Profil</h4>
+                        <p class="primary-2 text-leading">
+                            Selamat datang di Batiku, tempat di mana tradisi bertemu dengan kreativitas modern. Sebagai
+                            perusahaan yang berfokus pada industri UMKM pembuatan batik, kami dengan bangga
+                            mempersembahkan keindahan dan keunikan warisan budaya Indonesia melalui setiap kain batik
+                            yang kami hasilkan.
+                        </p>
+                        <p class="primary-2 text-leading">
+                            Kami bergerak dalam jasa pembuatan batik Indonesia.
+                            Pembuatan batik kami mulai dari yang termurah
+                            berkisaran Rp 20.000,- dengan kualitas standar sampai
+                            dengan harga yang termahal Rp 2.000.000,- dengan
+                            kualitas yang terbaik. Dengan BATIKU kamu bisa
+                            memenuhi akan batikmu. BATIKU terkenal mandiri dan
+                            profesional, sudah tersebar di seluruh Indonesia.
+                        </p>
+                    </div>
+                    <!-- <div class="mt-4 aos-kiri">
+                        <h4 class="primary-1">Bagaimana Alur Pemesanan ?</h4>
+                        <p class="primary-2 mt-3 ms-2">
+                            1. Hubungi kami di nomor 0822 2861 8169 (Rafly Nur Ihvandi).
+                            <br />
+                            2. Tentukan batik mana yang mau kamu pesan.
+                            <br />
+                            3.Tim administrator akan membantu dalam memilih dan menentukan batik yang cocok untukmu.
+                            <br />
+                            4.Lakukan pembayaran dengan metode yang diberikan admin.
+                        </p>
+                    </div> -->
+                </div>
+                <div class="col-md-6">
+                    <!-- kontak person -->
+                    <div class="">
+                        <h4 class="primary-1 text-center aos-kanan">Kontak Person</h4>
+                        <div class="d-flex justify-content-center primary-2">
+                            <div class="d-flex align-items-center mx-4 aos-kanan">
+                                <img src="public/img/icon/wa.png" class="icn-kon-per" alt="" srcset="">
+                                <p class="mt-3 ms-1 txt-per">0822 2861 8169</p>
+                            </div>
+                            <div class="d-flex align-items-center mx-4 aos-kanan">
+                                <img src="public/img/icon/email.png" class="icn-kon-per" alt="" srcset="">
+                                <p class="mt-3 ms-2 txt-per">batiku@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center primary-2 aos-kanan">
+                            <img src="public/img/icon/ig.png" class="icn-kon-per" alt="" srcset="">
+                            <p class="mt-2 ms-1 txt-per">@batiku.official</p>
+                        </div>
+                    </div>
+                    <!-- location -->
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="mt-4 aos-kanan"><img src="public/img/icon/lokasi.png" style="width: 60px;" alt=""
+                                srcset="">
+                        </div>
+                        <p class="text-center mx-2 primary-2 aos-kanan">Rt 10, Rw 04, Desa.Sidomulyo, Kecamatan.Pule,
+                            Kabupaten.Trenggalek,
+                            Jawa Timur, 66362</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15798.463616285344!2d111.47046667094085!3d-8.140526520230475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79134bd3e71003%3A0xd2249b83cafd435d!2sSDN%201%20Sidomulyo!5e0!3m2!1sid!2sid!4v1703739804142!5m2!1sid!2sid"
+                            width="300px" height="200px" style="border:4px solid #8E3200" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="aos-kanan"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end profile -->
+
+    <!-- definisi batik -->
+    <section id="definisi-batik">
+        <div class="container py-5 primary-4">
+            <h1 class="tl-def aos-kiri">Keunggulan</h1>
+            <div class="wrapper">
+                <img src="public/img/about1.png" class="aos-kiri" alt="" srcset="">
+                <div class="text-definisi">
+                    <ul>
+                        <li class="aos-kanan">
+                            <p>
+                                Batiku menghadirkan desain batik yang inovatif dan unik, menciptakan karya seni yang
+                                menarik perhatian pelanggan.
+                            </p>
+                        </li>
+                        <li class="aos-kanan">
+                            <p>
+                                Produk batik Batiku menggunakan bahan berkualitas tinggi, memberikan kenyamanan dan daya
+                                tahan yang luar biasa.
+                            </p>
+                        </li>
+                        <li class="aos-kanan">
+                            <p>
+                                Batiku mempertahankan teknik pembuatan batik tradisional, menciptakan nuansa klasik dan
+                                otentik dalam setiap karyanya.
+                            </p>
+                        </li>
+                        <li class="aos-kanan">
+                            <p>
+                                Batiku mendukung dan bekerja sama dengan pengrajin batik lokal, memastikan keberlanjutan
+                                dan pertumbuhan komunitas pengrajin.
+                            </p>
+                        </li>
+                        <li class="aos-kanan">
+                            <p>
+                                Batiku menawarkan berbagai macam motif batik, mulai dari yang klasik hingga yang modern,
+                                sehingga dapat memenuhi selera pelanggan yang beragam.
+                            </p>
+                        </li>
+                        <li class="aos-kanan">
+                            <p>
+                                Batiku memberikan layanan kustomisasi, memungkinkan pelanggan untuk membuat batik sesuai
+                                dengan selera dan kebutuhan pribadi mereka.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end definisi batik -->
+
+    <!-- keunggulan -->
+    <section id="keunggulan">
+        <div class="container py-5">
+            <div class="wrapper">
+                <div class="text-keunggulan primary-1">
+                    <h1 class="aos-kiri">Cara Pemesanan</h1>
+                    <p class="mt-4 aos-kiri lh-lg" style="text-align: justify;">
+                        1. Buka situs web resmi Batiku untuk menelusuri koleksi dan produk batik yang ditawarkan.<br>
+                        2. Jelajahi produk Batiku untuk melihat berbagai macam batik yang tersedia. Tinjau desain, motif, dan pilihan warna.<br>
+                        3. Hubungi Kontak Person dengan klik tombol "Chat Via WhatsApp" dibawah atau bisa langsung menuju ke market pleace yang tersedia.<br>
+                        4. Tim administrator akan memberikan panduan untuk melanjutkan pemesanan.<br>
+                        5. Lakukan pembayaran dengan metode yang diberikan admin.<br>
+                        6. Maka pesanan anda akan segera ditangani oleh tim Batiku.
+                    </p>
+                </div>
+                <div class="aos-kanan">
+                    <img src=" public/img/about2.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end keunggulan -->
+
+    <!-- galeri -->
+    <section id="galeri" class="bg-primary-1">
+        <div class="container pt-5 pb-5">
+            <h1 class="primary-4 text-center aos-bawah mb-3 aos-bawah">Galeri</h1>
+            <p class="primary-4 txt-galeri mb-4 aos-bawah">
+                Selamat datang di Galeri Batik kami, di mana setiap helai kain menjadi kanvas bagi keindahan dan
+                kekayaan warisan budaya Indonesia.
+                Jelajahi Galeri Batik kami dan biarkan keindahan dan kehangatan budaya Indonesia menginspirasi Anda.
+                Setiap gambar adalah undangan untuk memahami dan mencintai tradisi batik yang telah diwariskan dari
+                generasi ke generasi.
+            </p>
+            <div class="border-galeri aos-bawah">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="public/img/slide/s1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s6.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s7.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s8.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="public/img/slide/s9.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end galeri -->
+
+    <!-- batik agraris -->
+    <section id="produk-batiku" class="bg-primary-4">
+        <div class="container">
+            <h1 class="primary-1 text-center py-5 aos-bawah">Produk Batiku</h1>
+            <div class="row">
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/slide/s3.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-3">Burung Cendrawasih</h5>
+                            <p class="text-card-size-2">Motif Cendrawasih Menggambarkan<br>kekayaan, keindahan dan
+                                keanggunan alam<br>dan fauna Papua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/kerawang_tegak.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-3">Burung Cendrawasih</h5>
+                            <p class="text-card-size-2">Motif Kerawang Tegak Melambangkan<br>seseorang yang memiliki
+                                kesadaran yang<br>kuat akan Tuhan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/pintu_aceh.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Pintu Aceh</h5>
+                            <p class="text-card-size">Motif Pintu Aceh diambil dari ukiran<br>bangunan adat khas aceh
+                                yang berbentuk<br>sebuah pintu dengan ukiran ciri khas Aceh<br>peninggalan Raja Sultan
+                                Iskandar Muda<br>yang diberi nama Pinto Khop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pb-5">
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/sekomandi.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Sekomandi</h5>
+                            <p class="text-card-size-3">Tenun sekomandi, warisan leluhur<br>masyarakat Kalumpang Mamuju
+                                di<br>Sulawesi Barat, diyakini sebagai salah<br>satu tenun tertua di dunia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/tengkawang_ampiek.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Tengkawang Ampiek</h5>
+                            <p class="text-card-size-3">Tanaman ini memiliki banyak manfaat bagi<br>kesehatan, dan
+                                biasanya dipakai sebagai<br>bahan makanan, kosmetika, maupun obat <br>obatan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/tongkonan.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Tongkonan</h5>
+                            <p class="text-card-size">Istilah Tongkonan berasal dari suku Toraja<br>yaitu "tongkon" yang
+                                artinya duduk, Rumah<br>adat ini merupakan rumah adat dari suku<br>Toraja, yang menetap
+                                di pegunungan<br>bagian utara Sulsel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end batik agraris -->
+
+    <!-- batik keraton -->
+    <section id="batik-keraton" class="bg-primary-4">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/besurek_rafflesia.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Besurek Rafflesia</h5>
+                            <p class="text-card-size-3">Seni Batik Besurek di Bengkulu<br>diperkenalkan oleh pedagang
+                                batik dan<br>seniman dari Demak, Ini bisa dilacak dari<br>Kesultanan Demak.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/besurek_rembulan.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Besurek Rembulan</h5>
+                            <p class="text-card-size-3">Besurek Rembulan adalah tekstil batik khas<br>
+                                yang polanya merupakan kombinasi dari <br>
+                                kaligrafi Arab dan motif bulan purnama <br>
+                                (Rembulan)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/mahkota_siger.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Mahkota Siger</h5>
+                            <p class="text-card-size">Siger adalah nama mahkota bagi wanita <br>
+                                bangsawan Lampung di zaman kuno. Motif <br>
+                                ini adalah simbol feminitas, kekuatan, dan <br>
+                                keanggunan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/mega_mendung.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Awan</h5>
+                            <p class="text-card-size">Batik Awan adalah jenis motif <br>
+                                terkenal batik khas Indonesia. <br>
+                                Penggambaran awan mendung <br>
+                                menunjukkan akulturasi antar budaya dan <br>
+                                ornamentasi Tiongkok</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/parang_seling.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Parang Seling</h5>
+                            <p class="text-card-size">Batik Parang Seling Praba terdiri dari kata <br>
+                                Parang dan Praba. Parang bermakna <br>
+                                manusia harus memiliki cita-cita yang <br>
+                                luhur, kokoh dalam pendirian, serta setia <br>
+                                pada nilai kebenaran. Sedangkan Praba <br>
+                                berarti cerdas, berbakat, dan kreatif</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aos-bawah col-md-4 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 card-shadow" style="width: 20rem;">
+                        <img src="public/img/batik/sido_mulyo.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body bg-primary-3 pb-0">
+                            <h5 class="primary-1 mb-2">Sida Mulya</h5>
+                            <p class="text-card-size">Motif-motif batik berawalan sida (dibaca <br>
+                                sido) merupakan golongan motif yang <br>
+                                banyak dibuat para pembatik. Kata “sida” <br>
+                                dalam bahasa Jawa sendiri berarti jadi <br>
+                                menjadi/terlaksana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end batik keraton -->
+
+    <!-- pesan -->
+    <section id="pesan" class="bg-primary-1">
+        <div class="container pb-4">
+            <div class="row pt-4 pb-1">
+                <div class="col-md-7">
+                    <h4 class="primary-4 aos-kiri">Email</h4>
+                    <input type="email" class="border-c-p-1 p-2 bg-primary-4 primary-1 w-100 aos-kiri">
+                    <h4 class="primary-1 mt-3 aos-kiri">No Telephone</h4>
+                    <input type="text" class="border-c-p-1 p-2 bg-primary-4 primary-1 w-100 aos-kiri">
+                </div>
+                <div class="col-md-5 mt-3 mt-md-0">
+                    <div class="aos-kanan d-flex justify-content-center">
+                        <img src="public/img/logo_batiku.png" alt="" width="70px" height="70px">
+                    </div>
+                    <h5 class="aos-kanan primary-4 text-center">Punya Pertanyaan mengenai website ini?</h5>
+                    <p class="aos-kanan primary-4 fs-4 text-center">Jangan Ragu untuk<br>hubungi kami sekarang</p>
+                </div>
+            </div>
+            <h4 class="primary-4 aos-kiri">Pesan</h4>
+            <textarea class="aos-kiri border-c-p-1 p-2 bg-primary-4 primary-1 w-100 mb-2"
+                style="height: 30vh;"></textarea>
+            <a href="#"
+                class="text-decoration-none primary-1 bg-primary-4 send-button px-4 py-1 rounded-3 aos-kiri">kirim</a>
+        </div>
+    </section>
+    <!-- end pesan -->
+
+    <!-- whatsapp -->
+    <div class="scroll-icon" id="scrollIcon">
+        <div class=" bg-success d-flex align-items-center">
+            <a href="https://api.whatsapp.com/send?phone=6282232984829"><img src="public/img/icon/whatsapp-icon.svg"
+                    style="width: 40px; margin-bottom: 3px;" alt="" class="" srcset=""></a>
+            <span class="ms-2">Chat Via Whatsapp</span>
+        </div>
+    </div>
+    <!-- end whatsapp -->
+
+    <!-- cart -->
+    <div>
+        <div class="scroll-cart" id="scrollCart" id="popUpImage" onclick="openPopUp()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+        </div>
+    </div>
+    <!-- end cart -->
+
+    <!-- cart pop-up -->
+    <div id="popUpCart">
+        <!-- Konten pop-up -->
+        <div id="popUpContent">
+            <span id="closeButton" class="btn-close" onclick="closePopUp()"></span>
+            <div class=" mb-2 content-icon shopee-icon">
+                <a href="" class="d-flex align-items-center">
+                    <img style=" width: 40px;" src="public/img/icon/shopee-icon.svg" alt="" srcset="">
+                    <p class="my-2 ms-2">Shopee</p>
+                </a>
+            </div>
+            <div class=" my-2 content-icon tokopedia-icon">
+                <a href="" class="d-flex align-items-center">
+                    <img style=" width: 40px;" src="public/img/icon/tokopedia-icon.svg" alt="" srcset="">
+                    <p class="my-2 ms-2">Tokopedia</p>
+                </a>
+            </div>
+            <div class=" my-2 content-icon tiktok-icon">
+                <a href="" class="d-flex align-items-center">
+                    <img style=" width: 40px;" src="public/img/icon/tiktok-icon.svg" alt="" srcset="">
+                    <p class="my-2 ms-2">TiktokShop</p>
+                </a>
+            </div>
+            <div class=" my-2 content-icon lazada-icon">
+                <a href="" class="d-flex align-items-center">
+                    <img style=" width: 39px;" src="public/img/icon/lazada-icon.png" alt="" srcset="">
+                    <p class="my-2 ms-2">Lazada</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- end cart pop-up -->
+
+    <!-- footer -->
+    <footer class="bg-primary-3">
+        <div class="container py-4 pb-3">
+            <div class="row px-4">
+                <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
+                    <img src="public/img/logo_batiku.png" width="170px" height="170px" alt="">
+                </div>
+                <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="pen-fot">
+                        <h5 class="primary-1 mb-3">Links</h5>
+                        <p class="lh-1"><a href="#" class="text-decoration-none"><span class="primary-1">Menu</span></a>
+                        </p>
+                        <p class="lh-1"><a href="#profile" class="text-decoration-none"><span
+                                    class="primary-1">Profile</span></a></p>
+                        <p class="lh-1"><a href="#definisi-batik" class="text-decoration-none"><span
+                                    class="primary-1">Tentang Batik</span></a></p>
+                        <p class="lh-1"><a href="#batik-agraris" class="text-decoration-none"><span
+                                    class="primary-1">Blog Batik</span></a></p>
+                        <p class="lh-1"><a href="#pesan" class="text-decoration-none"><span
+                                    class="primary-1">Pesan</span></a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="pen-fot">
+                        <h5 class="primary-1 mb-3">Kontak Person</h5>
+                        <a href="" class="text-decoration-none">
+                            <div class="d-flex">
+                                <img src="public/img/icon/wa.png" width="25" height="25" class="me-2" alt="">
+                                <p class="primary-1">0822 2861 8269</p>
+                            </div>
+                        </a>
+                        <a href="" class="text-decoration-none">
+                            <div class="d-flex">
+                                <img src="public/img/icon/email.png" width="25" height="25" class="me-2" alt="">
+                                <p class="primary-1">batiku@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="" class="text-decoration-none">
+                            <div class="d-flex">
+                                <img src="public/img/icon/ig.png" width="25" height="25" class="me-2" alt="">
+                                <p class="primary-1">@batiku.official</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 my-3 my-md-0 d-flex justify-content-center">
+                    <div class="pen-fot">
+                        <h5 class="primary-1 mb-2">Tentang Kami</h5>
+                        <p class="primary-1">Jasa pembuatan batik Indonesia BATIKU melayani pembuatan dan pemesanan
+                            ragam batik seluruh Indonesia. <a href="#profile" class="text-decoration-none"><span
+                                    class="fst-italic fw-bold primary-1"
+                                    style="font-size:small;">Selengkapnya</span></a></p>
+                        <a href=""
+                            class="text-decoration-none primary-4 bg-primary-1 send-button px-4 py-1 rounded-3 text-white">Hubungi
+                            Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <span class="gr-c primary-1 pt-3 text-center">
+                    Copyright © Batiku 2023
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- bootstrap -->
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="public/js/aos.js"></script>
+</body>
+
+</html>

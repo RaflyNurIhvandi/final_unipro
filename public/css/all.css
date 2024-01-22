@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+span {
+  font-family: 'Inria Serif';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kaushan Script';
+}
+
+.primary-4 {
+  color: #ffebc1;
+}
+
+.primary-3 {
+  color: #d7a86e;
+}
+
+.primary-2 {
+  color: #a64b2a;
+}
+
+.primary-1 {
+  color: #8e3200;
+}
+
+.bg-primary-4 {
+  background-color: #ffebc1;
+}
+
+.bg-primary-3 {
+  background-color: #d7a86e;
+}
+
+.bg-primary-2 {
+  background-color: #a64b2a;
+}
+
+.bg-primary-1 {
+  background-color: #8e3200;
+}
