@@ -4,7 +4,8 @@ html {
 
 p,
 span {
-  font-family: 'Hind Siliguri';
+  /* font-family: 'Hind Siliguri'; */
+  font-family: 'Dosis';
 }
 
 h1,
@@ -13,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Darker Grotesque';
+  font-family: 'Dosis';
 }
 
 .primary-4 {
